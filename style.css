@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cairo&family=Itim&family=Noto+Sans+Syloti+Nagri&family=Playfair+Display:ital@1&family=Raleway&display=swap');
+
+/* * universal selctor */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    left: 10px;
+}
+.container{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    background-color: white;
+    /* margin-left: 100px; */
+    align-items: center;
+    justify-content: space-around
+}
+nav ul li{
+   
+    display: inline-block;
+    margin: 50px  20px 50px 20px
+    /* margin: top, right, bottom, left */
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* to change cruiser style when mouse hover*/
+/* psuedo class
+selector: pseudo-class name{property value} */
+
+nav ul li a:hover{
+    color: red;
+}
+.home {
+    margin: 15% 10% 5% 10%;
+}
+
+.home h1{
+    color: black;
+    font-size: 80px;
+}
+.home span{
+    color: orange;
+    font-size: 100px;
+}
+.home .nil :hover{
+    font-size: 120px;
+}
+.home p{
+    color: rgb(76, 66, 66);
+    font-style: italic;
+    margin: 10px 10px 10px 10px;
+
+}
+.home a{
+    background-color: black;
+    color: bisque;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px 0px 10px 10px;
+    /* provide inline-display to get the margin else margin space not visible */
+    border-radius: 5px;
+}
+.home a:hover{
+    color: azure;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+   
+}
+
+
+.image img{
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    /* transform: translateX(-50%); */
+    transition: bottom 1s, left 1s;
+   
+}
+
+.image:hover .shape{
+    bottom: 70px;
+} 
+.image:hover .ogimg{
+    left: 100%;
+ }
+
+ #about{
+    margin: 0% 10% 13% 8%;
+ }
+ 
+ 
+ .about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .about-image img{
+    width:80% ;
+    height: 100%;
+    margin: 0% 5% 5% 5%;
+    border-radius: 5px;
+ }
+ .intro h2{
+    margin: 10% 10% 3% 50%;
+ }
+ .intro span{
+    margin: 0% 10% 3% 50%;
+ }
+ .about-text{
+    margin-top: 3%;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .informations .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1 rem;
+    line-height: 2rem;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+
+ #skill .heading {
+   margin: 5% 0% 5% 45%;
+ }
+ .skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+ }
+.skill-container .skill-image img{
+    width: 100%;
+    height: 100%;
+    
+}
+.bars{
+    margin-right: 15%;
+    
+}
+.bars h3{
+    font-size: 15px;
+    color: gray;
+}
+.bars p{
+display: inline;
+position: relative;
+margin-left: 90%;
+bottom: 20px;
+font-size: 10px;
+color: yellowgreen;
+}
+.light-bar{
+    /* position: absolute; */
+    background-color: rgb(92, 85, 85);
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+}
+.html-bar{
+   
+    position: relative;
+    bottom: 5px;
+    background-color: orange;
+    width: 94%;
+    height: 5px;
+    border-radius: 5px;
+}
+.css-bar{
+   
+    position: relative;
+    bottom: 5px;
+    background-color: orange;
+    width: 88%;
+    height: 5px;
+    border-radius: 5px;
+}
+.react-bar{
+   
+    position: relative;
+    bottom: 5px;
+    background-color: orange;
+    width: 60%;
+    height: 5px;
+    border-radius: 5px;
+}
+.python-bar{
+   
+    position: relative;
+    bottom: 5px;
+    background-color: orange;
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+}
+#contact .heading{
+    margin: 3% 0% 1% 45%;
+}
+
+.icondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon i{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid; */
+    /* create border for each icon */
+    border-radius: 50%;
+    /* make the border round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    /* for changing icon size */
+}
+.icon i:hover{
+    background-image: linear-gradient(to right, red , yellow);
+    /* background linear gradient effect. no need of linking */
+    color: white;
+    /* icon color  */
+    font-size: 30px;
+    scroll-behavior: smooth;
+    transform: rotateX(150deg);
+    transition: 4s;
+footer{
+    margin-left: 37%;
+}
+.footer-icon{
+    position: relative;
+    bottom: 20px;
+    margin-left: 85%;
+    border-radius: 50%;
+}
+.footer-icon i{
+    font-size: 40px;
+}
+.footer-icon :hover{
+
+  color: orange;
+
+}
+
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgb(240, 238, 236) ;
+}
+/* track and thumb - two parts of scroll bar */
+::-webkit-scrollbar-track{
+    background-color: rgb(240, 238, 237);
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 5px;
+}
